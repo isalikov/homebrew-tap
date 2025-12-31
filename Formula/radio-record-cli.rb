@@ -5,23 +5,23 @@
 class RadioRecordCli < Formula
   desc "Terminal radio player for Radio Record stations"
   homepage "https://github.com/isalikov/radio-record-cli"
-  version "1.0.1"
+  version "1.1.0"
   license "MIT"
 
   depends_on "mpv" => :required
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/isalikov/radio-record-cli/releases/download/v1.0.1/radio-record-cli_1.0.1_darwin_amd64.tar.gz"
-      sha256 "3c30d72ac0c106f78a01901187fe21f294108ba00201419eae0c735a3b2001c8"
+      url "https://github.com/isalikov/radio-record-cli/releases/download/v1.1.0/radio-record-cli_1.1.0_darwin_amd64.tar.gz"
+      sha256 "1082e3b804830db1652af4ddc8ae864cfb1e6e5162588b353596712ef2425fcc"
 
       def install
         bin.install "radio-record"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/isalikov/radio-record-cli/releases/download/v1.0.1/radio-record-cli_1.0.1_darwin_arm64.tar.gz"
-      sha256 "4ed63e64e394ed83db62b08f5d8b1b6346637d21029c1d802dc59beffe94667e"
+      url "https://github.com/isalikov/radio-record-cli/releases/download/v1.1.0/radio-record-cli_1.1.0_darwin_arm64.tar.gz"
+      sha256 "80f9a67694c1864651ec94e642a9090de9f628459050fa597ef9940718b915b1"
 
       def install
         bin.install "radio-record"
@@ -31,15 +31,15 @@ class RadioRecordCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/isalikov/radio-record-cli/releases/download/v1.0.1/radio-record-cli_1.0.1_linux_amd64.tar.gz"
-      sha256 "dcffbc1385aa00398cb777cfbb85094a911776c03745223c9b311ea6297cdab7"
+      url "https://github.com/isalikov/radio-record-cli/releases/download/v1.1.0/radio-record-cli_1.1.0_linux_amd64.tar.gz"
+      sha256 "d2682dab89d34f413caf04cac7e5a6b39eb0df32441419f44be8b37b04ada902"
       def install
         bin.install "radio-record"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/isalikov/radio-record-cli/releases/download/v1.0.1/radio-record-cli_1.0.1_linux_arm64.tar.gz"
-      sha256 "9b0d85d2afeff655233c83d4d31c814876fe3788ffa2734f004f3ef76c97ef29"
+      url "https://github.com/isalikov/radio-record-cli/releases/download/v1.1.0/radio-record-cli_1.1.0_linux_arm64.tar.gz"
+      sha256 "d0dcb4369216c9a6d9c13dd8eb19ce63ce11b5fcfda5901d3f4e38fd5e3aa7c1"
       def install
         bin.install "radio-record"
       end
